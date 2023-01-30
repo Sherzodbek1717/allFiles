@@ -1,0 +1,48 @@
+ul.menu ul {
+    display: none;
+}
+
+ul.menu {
+    border: 1px solid #ccc;
+    width: 300px;
+    border-radius: 5px;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.menu>li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 15px;
+    position: relative;
+
+}
+
+ul.menu li:last-child {
+    border-bottom: none;
+}
+
+ul.menu>li::after {
+    content: '\2304';
+    position: absolute;
+    right: 10px;
+    top: 0.3em;
+}
+
+ul.menu>li.active::after {
+    content: '\2303';
+    top: 0.7em;
+}
+
+ul.menu>li:hover {
+    background-color: #efefee;
+    cursor: pointer;
+}
+
+ul.menu>li.active ul {
+    display: block;
+}
+
+ul.menu>li.active {
+    background-color: #f6f6f6;
+}
+

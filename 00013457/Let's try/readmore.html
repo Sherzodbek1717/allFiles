@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS introduction </title>
+    <style>
+        img {
+            height: 400px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/sherzodbek.khabibullaev_qr (1).png" alt="">
+    <h1 id="my-title">
+        This is my Website
+    </h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cumque repudiandae odio eveniet eligendi a, aut sunt enim ullam,
+            tempora autem ipsum amet numquam nam inventore hic dolore vitae voluptatibus! Illum.</p>
+        <div>This is a <strong> div </strong>  tag.</div>
+    <h1 id="number">0</h1>
+        <button id="plus">+</button>
+        <button id="minus">-</button>
+
+
+        <script>
+            const number = document.getElementById('number')
+            const plus = document.getElementById('plus')
+            const minus = document.getElementById('minus')
+
+            let count = 0 
+
+            plus.addEventListener('click', function() {
+                count++;
+                number.innerText = count;
+            });
+
+            minus.addEventListener('click', function() {
+                count--;
+                number.innerText = count;
+            });
+
+            /*
+            console.log('Hello world!')
+            const name = "Sherzodbek"
+            const names = [1, 2, 3, 'Hello', " Sherzodbek"];
+            for(let name of names){
+                console.log (`Current value is ${name}`)
+            } 
+            */
+    
+            const title = document.getElementById('my-title')
+            title.innerText = "This is some random text"
+            title.setAttribute('class', 'special')
+            const div = document.getElementById('my-title')
+            function printHelloWorld() {
+                console.log('Someone clicked the box')
+            }
+            div.addEventListener('click', printHelloWorld);
+        </script>
+</body>
+</html>

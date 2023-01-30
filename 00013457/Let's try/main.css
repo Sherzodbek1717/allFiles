@@ -1,0 +1,72 @@
+body {
+    background-color: while;
+    text-decoration-style: solid black;
+    color: black;
+    text-align: center;
+    
+}
+
+.resize {
+    display: center;
+    width: 50% ;
+    height: auto;
+}
+
+.button {
+    background-color: red;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 105px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#wrapper {
+    bottom: 50%;
+    right: 50%;
+    position: absolute;
+
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  #testid {
+    text-decoration: none;
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+  }
+
+  #testid :hover {
+    overflow: visible;
+  }
+
